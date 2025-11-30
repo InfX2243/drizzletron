@@ -1,0 +1,147 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drizzletron - Weather app</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="src/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    
+    <!-- Header section -->
+    <header class="rounded-3">
+        Drizzletron-Weather app
+    </header>
+
+    <!-- Container for the app -->
+    <div class="app-container rounded-3">
+
+        <!-- Search bar -->
+        <div class="searchbar">
+
+            <!-- Input field -->
+            <div class="form-floating input-container">
+                <input type="text" name="" id="city" class="form-control" placeholder="Type the name of the city (e.g. Mumbai)">
+                <label for="city">Type the name of the city (e.g. Mumbai)</label>
+            </div>
+
+            <!-- Search button -->
+            <div class="search-button">
+                <span class="btn btn-info rounded-circle p-3">
+                    <i class="fa fa-search"></i>
+                </span>
+            </div>
+
+            <!-- Toggle theme button -->
+            <div class="theme-toggle-button">
+                <span class="btn btn-secondary rounded-circle p-3">
+                    <i class="fa fa-moon-o"></i>
+                </span>
+            </div>
+
+        </div>
+
+        <!-- Search results -->
+        <div class="results">
+
+            <!-- Display current weather -->
+            <div class="current-weather rounded-4">        
+
+                <div class="current-weather-img rounded-circle">
+                    <img src="assets/few-clouds-day.png" alt="" class="">
+                </div>
+
+                <div class="current-weather-city">
+                    <div class="city-name h3">Mumbai</div>
+                    <div class="city-timezone h4">GMT +05:30 Kolkata</div>
+                </div>
+
+                <div class="current-weather-details mx-5">
+                    <div><i class="fa-solid fa-temperature-high"></i> Temperature: 0</div>
+                    <div><i class="fa-solid fa-wind"></i> Wind Speed: 0</div>
+                    <div><i class="fa-solid fa-droplet"></i> Humidity: 0</div>
+                </div>
+
+                <div class="city-geolocation mx-5">
+                    <div><i class="fa-solid fa-globe"></i> lat: 0.0</div>
+                    <div><i class="fa-solid fa-globe"></i> lon: 0.0</div>
+                    <div><i class="fa-regular fa-copy"></i> Copy</div>
+                </div>
+
+            </div>
+
+            <!-- Display forecasted weather for the upcoming days -->
+            <div class="forecast rounded-4">
+
+                <h3 class="text-center">Weather in upcoming days</h1>
+
+                <div class="forecasts-container">
+                    <!-- Day 1 -->
+                    <div class="day-forecast rounded-4">
+                        <div>
+                            <img src="assets/few-clouds-day.png" alt="" class="rounded-circle">
+                            <div><i class="fa-solid fa-temperature-high"></i> 0</div>
+                            <div><i class="fa-solid fa-wind"></i> 0</div>
+                            <div><i class="fa-solid fa-droplet"></i> 0</div>
+                        </div>
+                    </div>
+    
+                    <!-- Day 2 -->
+                    <div class="day-forecast rounded-4">
+                        <div>
+                            <img src="assets/few-clouds-day.png" alt="" class="rounded-circle">
+                            <div><i class="fa-solid fa-temperature-high"></i> 0</div>
+                            <div><i class="fa-solid fa-wind"></i> 0</div>
+                            <div><i class="fa-solid fa-droplet"></i> 0</div>
+                        </div>
+                    </div>
+    
+                    <!-- Day 3 -->
+                    <div class="day-forecast rounded-4">
+                        <div>
+                            <img src="assets/few-clouds-day.png" alt="" class="rounded-circle">
+                            <div><i class="fa-solid fa-temperature-high"></i> 0</div>
+                            <div><i class="fa-solid fa-wind"></i> 0</div>
+                            <div><i class="fa-solid fa-droplet"></i> 0</div>
+                        </div>
+                    </div>
+    
+                    <!-- Day 4 -->
+                    <div class="day-forecast rounded-4">
+                        <div>
+                            <img src="assets/few-clouds-day.png" alt="" class="rounded-circle">
+                            <div><i class="fa-solid fa-temperature-high"></i> 0</div>
+                            <div><i class="fa-solid fa-wind"></i> 0</div>
+                            <div><i class="fa-solid fa-droplet"></i> 0</div>
+                        </div>
+                    </div>
+    
+                    <!-- Day 5 -->
+                    <div class="day-forecast rounded-4">
+                        <div>
+                            <img src="assets/few-clouds-day.png" alt="" class="rounded-circle">
+                            <div><i class="fa-solid fa-temperature-high"></i> 0</div>
+                            <div><i class="fa-solid fa-wind"></i> 0</div>
+                            <div><i class="fa-solid fa-droplet"></i> 0</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer section -->
+    <footer class="rounded-3">
+        &copy; 2025 Drizzletron
+        <br>
+        Built by 
+        <i class="fa-brands fa-github"></i>
+        <a href="https://github.com/InfX2243" target="_blank">InfX2243</a> 
+        • Project
+        <i class="fa-brands fa-github"></i>
+        <a href="https://github.com/InfX2243/drizzletron.git" target="_blank">Drizzletron</a>
+    </footer>
+
+</body>
+</html>
