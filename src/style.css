@@ -8,6 +8,20 @@
     --forecast-day-background: #fff;
     --footer-bg: #b7c7ca;
     --black: #000;
+    --white: #fff;
+}
+
+.dark {
+  --main-background: #1a1c1e;
+  --header-background: #264b6a;
+  --app-container-bg: #2a2a2a;
+  --searchbar-border: #79d3d8;
+  --current-weather-background: #387d00;
+  --forecast-weather-background: #826746;
+  --forecast-day-background: #3a1111;
+  --footer-bg: #2b2b2b;
+  --black: #fff;
+  --white: #707070;
 }
 
 html{
@@ -31,13 +45,14 @@ header{
 .app-container{
     width: 70%;
     margin: auto;
-    background: radial-gradient(circle, white, transparent);
+    background: radial-gradient(circle, var(--white), transparent);
     padding: 1em 0;
+    color: var(--black);
 }
 
 .searchbar{
     margin: auto;
-    padding: 1em 1em;
+    padding: 1em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,7 +75,6 @@ header{
     align-items: center;
     padding: 10 0;
     flex-wrap: wrap;
-
 }
 
 .current-weather div{
@@ -111,16 +125,51 @@ footer{
     margin: 20 auto;
     text-align: center;
     padding: 5 0;
-    /* background: radial-gradient(circle, yellow, transparent); */
     background: var(--footer-bg);
 }
 
-@media (min-width: 400px) and (max-width: 800px) {
+@media (max-width: 600px) {
     html{
-        font-size: 12px
+        font-size: 10px
     }
     header{
-        font-size: 1rem;
+        width: 50%;
+        font-size: 2rem;
+    }
+
+    .app-container{
+        width: 85%;
+        padding: 0.5em 0;
+    }
+
+    .searchbar div{
+        margin: 0 3;
+    }
+
+    .current-weather{
+        font-size: 140%;
+    }
+
+    .current-weather div{
+        margin: 3 auto;
+    }
+
+    .forecasts-container{
+        /* padding: 0; */
+        flex-direction: column;
+        margin: 10;
+    }
+
+    .day-forecast{ 
+        margin: 3;  
+    }
+
+    .day-forecast div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-grow: 1;
+        font-size: 120%;
     }
 
 }

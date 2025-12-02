@@ -27,15 +27,15 @@
             </div>
 
             <!-- Search button -->
-            <div class="search-button">
+            <div class="search-button" id="search-btn">
                 <span class="btn btn-info rounded-circle p-3">
                     <i class="fa fa-search"></i>
                 </span>
             </div>
 
             <!-- Toggle theme button -->
-            <div class="theme-toggle-button">
-                <span class="btn btn-secondary rounded-circle p-3">
+            <div class="theme-toggle-button" id="theme-toggle">
+                <span class="btn btn-dark rounded-circle p-3">
                     <i class="fas fa-moon"></i>
                 </span>
             </div>
@@ -49,23 +49,24 @@
             <div class="current-weather rounded-4">        
 
                 <div class="current-weather-img rounded-circle">
-                    <img src="assets/few-clouds-day.png" alt="" class="">
+                    <img src="assets/few-clouds-day.png" alt="" class="" id="current-weather-image">
                 </div>
 
                 <div class="current-weather-city">
-                    <div class="city-name h3">Mumbai</div>
-                    <div class="city-timezone h4">GMT +05:30 Kolkata</div>
+                    <div class="city-name h3" id="src-city">Mumbai</div>
+                    <div class="city-timezone h5">UTC <span id="src-timezone">+5.5</span></div>
+                    <div class="city-datetime h5"><span id="src-datetime"></span></div>
                 </div>
 
                 <div class="current-weather-details mx-5">
-                    <div><i class="fa-solid fa-temperature-high"></i> Temperature: 0</div>
-                    <div><i class="fa-solid fa-wind"></i> Wind Speed: 0</div>
-                    <div><i class="fa-solid fa-droplet"></i> Humidity: 0</div>
+                    <div><i class="fa-solid fa-temperature-high"></i> Temperature: <span id="src-temp">0</span></div>
+                    <div><i class="fa-solid fa-wind"></i> Wind Speed: <span id="src-wind">0</span></div>
+                    <div><i class="fa-solid fa-droplet"></i> Humidity: <span id="src-humidity">0</span></div>
                 </div>
 
                 <div class="city-geolocation mx-5">
-                    <div><i class="fa-solid fa-globe"></i> lat: 0.0</div>
-                    <div><i class="fa-solid fa-globe"></i> lon: 0.0</div>
+                    <div><i class="fa-solid fa-globe"></i> lat: <span id="src-lat">0.0</span></div>
+                    <div><i class="fa-solid fa-globe"></i> lon: <span id="src-lon">0.0</span></div>
                     <div><i class="fa-regular fa-copy"></i> Copy</div>
                 </div>
 
@@ -81,7 +82,8 @@
                     <div class="day-forecast rounded-4">
                         <div>
                             <img src="assets/few-clouds-day.png" alt="" class="rounded-circle">
-                            <div><i class="fa-solid fa-temperature-high"></i> 0</div>
+                            <div class="city-datetime1"><span id="src-datetime1"></span></div>
+                            <div><i class="fa-solid fa-temperature-high"></i><span>  0</span></div>
                             <div><i class="fa-solid fa-wind"></i> 0</div>
                             <div><i class="fa-solid fa-droplet"></i> 0</div>
                         </div>
@@ -91,6 +93,7 @@
                     <div class="day-forecast rounded-4">
                         <div>
                             <img src="assets/few-clouds-day.png" alt="" class="rounded-circle">
+                            <div class="city-datetime1"><span id="src-datetime1"></span></div>
                             <div><i class="fa-solid fa-temperature-high"></i> 0</div>
                             <div><i class="fa-solid fa-wind"></i> 0</div>
                             <div><i class="fa-solid fa-droplet"></i> 0</div>
@@ -101,6 +104,7 @@
                     <div class="day-forecast rounded-4">
                         <div>
                             <img src="assets/few-clouds-day.png" alt="" class="rounded-circle">
+                            <div class="city-datetime1"><span id="src-datetime1"></span></div>
                             <div><i class="fa-solid fa-temperature-high"></i> 0</div>
                             <div><i class="fa-solid fa-wind"></i> 0</div>
                             <div><i class="fa-solid fa-droplet"></i> 0</div>
@@ -111,6 +115,7 @@
                     <div class="day-forecast rounded-4">
                         <div>
                             <img src="assets/few-clouds-day.png" alt="" class="rounded-circle">
+                            <div class="city-datetime1"><span id="src-datetime1"></span></div>
                             <div><i class="fa-solid fa-temperature-high"></i> 0</div>
                             <div><i class="fa-solid fa-wind"></i> 0</div>
                             <div><i class="fa-solid fa-droplet"></i> 0</div>
@@ -121,6 +126,7 @@
                     <div class="day-forecast rounded-4">
                         <div>
                             <img src="assets/few-clouds-day.png" alt="" class="rounded-circle">
+                            <div class="city-datetime1"><span id="src-datetime1"></span></div>
                             <div><i class="fa-solid fa-temperature-high"></i> 0</div>
                             <div><i class="fa-solid fa-wind"></i> 0</div>
                             <div><i class="fa-solid fa-droplet"></i> 0</div>
@@ -142,6 +148,6 @@
         <i class="fa-brands fa-github"></i>
         <a href="https://github.com/InfX2243/drizzletron.git" target="_blank">Drizzletron</a>
     </footer>
-
+    <script src="src/script.js"></script>
 </body>
 </html>
